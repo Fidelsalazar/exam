@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header-container">
+    <h1>Comentarios de nuestros <span class="title">Clientes</span></h1>
+     <br>
+      <button
+        mat-raised-button
+        color="primary"
+        [matMenuTriggerFor]="menu_language"
+        class="menu-item-button" (click)="toggleMenu()"
+        style="
+          background-color: #99D3D7;
+          font-size: 15px;
+          width: 150px;
+          border-radius: 20px;
+          border: none;
+          padding: 0;
+          align-items: center;
+        "
+      >
+        <span>
+          Hoteles
+          <mat-icon class="arrow-icon">{{ isMenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
+        </span>
+      </button>
+
+      <mat-menu #menu_language="matMenu" class="menu-language" overlapTrigger="false" xPosition="before" yPosition="below">
+        <button mat-menu-item>Español</button>
+        <button mat-menu-item>Ingles</button>
+      </mat-menu>
+  </div>
+</div>

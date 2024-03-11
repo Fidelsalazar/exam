@@ -6,6 +6,7 @@ import { NoticeComponent } from "./module/notice/notice.component";
 import { InfoComponent } from "./module/info/info.component";
 import { ProductsComponent } from "./module/products/products.component";
 import { OfficeComponent } from "./module/office/office.component";
+import { ComentariosComponent } from "./module/comentarios/comentarios.component";
 
 @Component({
     selector: 'app-root',
@@ -19,7 +20,8 @@ import { OfficeComponent } from "./module/office/office.component";
         NoticeComponent,
         InfoComponent,
         ProductsComponent,
-        OfficeComponent
+        OfficeComponent,
+        ComentariosComponent
     ]
 })
 export class AppComponent {
