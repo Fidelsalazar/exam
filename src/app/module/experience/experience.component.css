@@ -1,0 +1,92 @@
+:host{
+  display: block;
+  width: 100%;
+}
+
+.slides {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.cards-style {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  padding: 5px;
+}
+
+.price{
+  margin-bottom: 20px;
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+h6{
+  margin-top: 5px;
+  width: 87%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  width: 87%;
+  text-align:left;
+}
+
+.explorar-button {
+  align-self: flex-start;
+  margin-left: 0;
+  width: 300px;
+
+}
+
+.card-button{
+  color: #1E819C;
+}
+
+.card-button-second{
+  color: rgba(105, 101, 101, 0.5)
+}
+
+.button-container {
+  position: absolute;
+  top: 125%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.button-container-card {
+  display: flex;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.prev-button,
+.next-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+.mat-icon-black {
+  color: black;
+}

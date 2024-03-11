@@ -1,0 +1,30 @@
+.container {
+  height: 850px;
+  display: block;
+  flex-direction: row;
+}
+
+.first-container {
+  width: 600px;
+  padding-top: 3%;
+
+}
+
+.header-container {
+  padding-top: 3%;
+  margin-left: 15%;
+}
+
+.title {
+  color: #1E819C;
+  font-weight: bold;
+}
+
+
+h1{
+  font-size: 42px;
+}
+
+span{
+  color: white
+}

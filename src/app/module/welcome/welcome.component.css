@@ -1,0 +1,157 @@
+/* Estilo del contennedor con imagen */
+.container{
+  background-image: url('../../../assets/Banner.png');
+  background-size: cover;
+  height: 950px;
+
+}
+
+/*Estilo del primer contenedor*/
+.first-container{
+  display: block;
+}
+
+/* Estio del menu */
+.menu{
+  display: flex;
+}
+
+/* Estilo del logo */
+.logo{
+  padding: 4%;
+  margin-left: 30px;
+  width: 200px;
+}
+
+/* Estilo para hacer la barra de navegación transparente */
+.mat-toolbar {
+  display: block;
+  margin-top: 70px;
+  margin-right: 50px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Estilo para el espacio entre elementos en la barra de navegación */
+.spacer {
+  flex: 1 1 auto;
+}
+
+.spacer-extra{
+  flex: 1 1 auto;
+}
+
+/* Estilo para los elementos de menú */
+.menu-items {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-item:hover::after {
+  content: '';
+  position: absolute;
+  margin-left: 15%;
+  bottom: -3px;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.menu-languague{
+  z-index: 1000;
+  position: absolute;
+}
+
+.button-container {
+  position: relative;
+}
+
+.menu-item-button {
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: auto;
+}
+
+/* Estilo para la barra de resaltado */
+.highlight {
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.menu-toggle-container{
+  margin-top: 40%;
+}
+
+/*Estilo para el card de reserva*/
+.card-container {
+  padding: 0;
+  margin-top: 0;
+  margin-left: 30%;
+  margin-right: 20%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.mat-card{
+  width: 300%;
+}
+
+.input-separator{
+  margin-right: 10px;
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+
+.badgeColor{
+  color: #C59005;
+}
+
+.explorar-continer {
+  margin-top: 300px;
+  margin-left: 70px
+}
+
+.explorar-style-title {
+  color: white;
+  font-weight: bold;
+  line-height: 0.5;
+  font-size: 48px;
+}
+
+.explorar-style{
+  color: white;
+  line-height: 1;
+  font-size: 21px
+}
+
+input{
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+

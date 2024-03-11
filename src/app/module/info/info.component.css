@@ -1,0 +1,80 @@
+.container{
+  background-color: #F6F4F7;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-container{
+  width: 500px;
+  padding-top: 3%;
+  margin-left: 15%;
+}
+
+.second-container {
+  margin-top: 3%;
+  margin-left: 15%;
+  position: relative;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../assets/info/pa\ video.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.play-color {
+  color: #F6F4F7;
+  font-size: 100px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 15%;
+  margin-left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.header-container{
+  padding-top: 3%;
+  margin-left: 15%;
+
+}
+
+.structure-container{
+  padding-top: 5%;
+  margin-left: 15%;
+}
+
+.info-container{
+  display: flex
+}
+
+.second{
+  margin-left: 30%;
+}
+
+.title{
+  color: #1E819C;
+  font-weight: bold;
+}
+
+.check-color{
+  color: #99D3D7;
+  font-weight: bold;
+}
+
+
+h1{
+  font-size: 42px;
+}
+
+h5{
+  font-size: 21px
+}
+
+p {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,44 @@
+<div class="slides" >
+
+  <div
+    class="cards-style"
+    *ngFor="let slide of slides; let i = index;"
+    [class.active]="i === currentSlide"
+  >
+      <img [src]="slide.url" alt="">
+      <p *ngIf="slide.rating">
+        <mat-icon>star_border</mat-icon>
+        {{slide.rating}}
+      </p>
+      <h6>{{ slide.title }}</h6>
+      <p >{{ slide.description }}</p>
+       <p class="price" *ngIf="slide.price">
+        {{slide.price}} {{slide.tare}}
+      </p>
+      <div class="button-container-card">
+        <button mat-flat-button >
+          <p class="card-button">
+            EXPLORAR
+          </p>
+        </button>
+
+        <button mat-flat-button class="explorar-button" *ngIf="slide.price">
+          <p class="card-button-second">
+            Cancelación flexible
+          </p>
+        </button>
+      </div>
+
+  </div>
+  <div class="button-container">
+    <button mat-fab class="prev-button" (click)="previous()">
+      <mat-icon class="mat-icon-black">chevron_left</mat-icon>
+    </button>
+
+    <button mat-fab class="next-button" (click)="next()">
+      <mat-icon class="mat-icon-black">chevron_right</mat-icon>
+    </button>
+  </div>
+
+</div>
+

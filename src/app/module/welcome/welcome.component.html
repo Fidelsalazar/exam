@@ -1,0 +1,124 @@
+<div class="container">
+  <div class="menu">
+    <img
+      class="logo"
+      src="../../../assets/Logo.png"
+      alt=""
+    >
+
+    <mat-toolbar color="transparent">
+      <mat-toolbar-row>
+        <span class="spacer"></span>
+
+        <div class="menu-items">
+          <span class="menu-item">Hoteles</span>
+          <span class="menu-item">Casa de Renta</span>
+          <span class="menu-item">Experiencias</span>
+          <span class="menu-item">Transfers</span>
+          <span class="menu-item">Vuelos</span>
+          <span class="highlight"></span>
+        </div>
+
+        <span class="spacer-extra"></span>
+
+        <div class="button-container">
+          <div class="button-container" style="display:flex">
+            <button mat-icon-button [matMenuTriggerFor]="menu_language" class="menu-item-button" (click)="toggleMenu()">
+              <mat-icon>language</mat-icon>
+              <mat-icon class="arrow-icon">{{ isMenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
+            </button>
+
+            <mat-menu #menu_language="matMenu" class="menu-language" overlapTrigger="false" xPosition="before" yPosition="below">
+              <button mat-menu-item>Español</button>
+              <button mat-menu-item>Ingles</button>
+            </mat-menu>
+
+            <button mat-icon-button class="menu-item-button">
+              <mat-icon> menu </mat-icon>
+            </button>
+            <button mat-icon-button class="menu-item-button">
+              <mat-icon
+                matBadge="15"
+                matBadgeColor="warn"
+              >
+                account_circle
+              </mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+  <div class="card-container">
+    <mat-card >
+      <mat-card-content>
+        <div style="display: flex; width: 100%;">
+          <div class="input-separator" style="width: 285px; margin-left: 15px;">
+            <label >Ubicación</label>
+            <br>
+            <input
+              type="text"
+              placeholder="¿A donde vas?"
+            >
+          </div>
+          <div class="input-separator">
+            <label for="">Entrada</label>
+            <br>
+            <input
+              type="text"
+              placeholder="Agregar fechas"
+            >
+          </div>
+          <div class="input-separator">
+            <label for="">Salida</label>
+            <br>
+            <input
+              type="text"
+              placeholder="Agregar fechas"
+            >
+          </div>
+          <div >
+            <label for="">Huéspedes</label>
+            <br>
+            <input
+              type="text"
+              placeholder="Agregar huéspedes"
+            >
+          </div>
+
+          <button mat-fab color="primary" style="background-color: #1E819C;" aria-label="Example icon button with a delete icon">
+            <mat-icon>search</mat-icon>
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div>
+    <div class="explorar-continer">
+      <h1 class="explorar-style-title">
+        Descubre Cuba, su cultura
+      </h1>
+      <h1 class="explorar-style-title">
+        y su gente
+      </h1>
+      <br><br>
+      <p class="explorar-style">Échale un vistazo a uno d elos destinos más</p>
+      <p class="explorar-style">visitados del Caribe</p>
+      <br><br>
+      <button
+        mat-raised-button
+        color="primary"
+        style="
+          background-color: #C59005;
+          font-size: 14px;
+          width: 100px;
+          border-radius: 20px;
+        "
+      >
+        Explora
+      </button>
+    </div>
+  </div>
+</div>
