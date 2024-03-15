@@ -17,8 +17,8 @@ import { FooterComponent } from "./module/footer/footer.component";
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [
+      WelcomeComponent,
         RouterOutlet,
-        WelcomeComponent,
         ExperienceComponent,
         NoticeComponent,
         InfoComponent,
@@ -28,7 +28,8 @@ import { FooterComponent } from "./module/footer/footer.component";
         AplicationComponent,
         ContactsComponent,
         FooterComponent
-    ]
+    ],
+    
 })
 export class AppComponent {
   title = 'exam1';

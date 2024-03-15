@@ -2,17 +2,17 @@
   background-color: #F6F4F7;
   height: 550px;
   display: flex;
-  flex-direction: row;
+  flex-direction:center;
 }
 
 .first-container{
   width: 500px;
-  padding-top: 3%;
-  margin-left: 15%;
+  padding-top: 5%;
+  margin-left: 10%;
 }
 
 .second-container {
-  margin-top: 3%;
+  margin-top: 5%;
   margin-left: 0;
   position: relative;
   height: 400px;

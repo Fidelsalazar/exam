@@ -1,5 +1,73 @@
 .continer {
   background-color: #1E819C;
-  height: 300px;
-  display: absolute;
+  height: 250px;
+  display: relative;
+}
+
+.header-continer{
+  display: flex;
+  justify-content: center; 
+}
+
+.logo{
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.option-continer{
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 30px;
+}
+
+.info-continer{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  
+  gap: 30px;
+}
+
+.social-media{
+  margin-top: -4px;
+}
+
+.icon{
+  color: white;
+}
+
+mat-icon{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+hr{
+  color: white;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p{
+  color: white;
+  
 }

@@ -3,6 +3,7 @@
   background-image: url('../../../assets/Banner.png');
   background-size: cover;
   height: 950px;
+  /* border: 5px solid red; */
 
 }
 
@@ -100,23 +101,38 @@
 }
 
 /*Estilo para el card de reserva*/
+
 .card-container {
-  padding: 0;
-  margin-top: 0;
-  margin-left: 250px;
-  margin-right:100px;
-  border-radius: 50px;
-  overflow: hidden;
+  /* border: 1px solid red;  */
+  padding: 0% 10%;
 }
 
-.mat-card{
-  width: 300%;
+.card-content{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
 }
 
 .input-separator{
-  margin-right: 10px;
-  border-right: 1px solid black;
-  padding-right: 10px;
+  margin: 10px;
+  /* margin-right: 10px; */
+  border-right: 1px solid black; 
+  padding: 10px;
+  width: 25%;
+}
+
+.input-separator-h{
+  margin: 10px;
+  /* margin-right: 10px; */
+  /* border-right: 1px solid black; */
+  padding: 10px;
+  width: 25%;
+}
+
+.search{
+  background-color: #1E819C;
+  margin: 10px;
 }
 
 .badgeColor{
@@ -124,7 +140,7 @@
 }
 
 .explorar-continer {
-  margin-top: 300px;
+  margin-top: 250px;
   margin-left: 70px
 }
 
@@ -138,7 +154,8 @@
 .explorar-style{
   color: white;
   line-height: 1;
-  font-size: 21px
+  font-size: 21px;
+  width: 500px
 }
 
 input{

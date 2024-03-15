@@ -1,6 +1,5 @@
 <div class="container">
   <div class="first-container">
-
     <div class="header-container">
       <h1>Productos más <span class="title">Vendidos</span></h1>
       <button
@@ -19,48 +18,49 @@
       </button>
     </div>
   </div>
-  <div class="slides" >
+  <div class="slides-container">
+    <div class="slides" >
+      <div
+        class="cards-style"
+        *ngFor="let slide of slides; let i = index;"
+        [class.active]="i === currentSlide"
+      >
+          <img style="width:250px; heigth: 250px "[src]="slide.url" alt="">
+          <p>
+            <mat-icon>star_border</mat-icon>
+            {{slide.rating}}
+          </p>
+          <p style="font-size:14px">{{ slide.title }}</p>
+          <p style="color: rgba(105, 101, 101, 0.5); width:250px">{{ slide.description }}</p>
+          <p class="price">
+            {{slide.price}}  <span style="color: rgba(105, 101, 101, 0.5)">{{slide.tare}}</span>
+          </p>
+          <div class="button-container-card">
+            <button mat-flat-button >
+              <p class="card-button">
+                EXPLORAR
+              </p>
+            </button>
 
-    <div
-      class="cards-style"
-      *ngFor="let slide of slides; let i = index;"
-      [class.active]="i === currentSlide"
-    >
-        <img style="width:250px; heigth: 250px "[src]="slide.url" alt="">
-        <p>
-          <mat-icon>star_border</mat-icon>
-          {{slide.rating}}
-        </p>
-        <p style="font-size:14px">{{ slide.title }}</p>
-        <p style="color: rgba(105, 101, 101, 0.5)">{{ slide.description }}</p>
-         <p class="price">
-           {{slide.price}}  <span style="color: rgba(105, 101, 101, 0.5)">{{slide.tare}}</span>
-        </p>
-        <div class="button-container-card">
-          <button mat-flat-button >
-            <p class="card-button">
-              EXPLORAR
-            </p>
-          </button>
+            <button mat-flat-button class="explorar-button">
+              <p class="card-button-second">
+                Cancelación flexible
+              </p>
+            </button>
+          </div>
 
-          <button mat-flat-button class="explorar-button">
-            <p class="card-button-second">
-              Cancelación flexible
-            </p>
-          </button>
-        </div>
+      </div>
+      <div class="button-container">
+        <button mat-fab class="prev-button" (click)="previous()">
+          <mat-icon class="mat-icon-black">chevron_left</mat-icon>
+        </button>
+
+        <button mat-fab class="next-button" (click)="next()">
+          <mat-icon class="mat-icon-black">chevron_right</mat-icon>
+        </button>
+      </div>
 
     </div>
-    <div class="button-container">
-      <button mat-fab class="prev-button" (click)="previous()">
-        <mat-icon class="mat-icon-black">chevron_left</mat-icon>
-      </button>
-
-      <button mat-fab class="next-button" (click)="next()">
-        <mat-icon class="mat-icon-black">chevron_right</mat-icon>
-      </button>
-    </div>
-
   </div>
 </div>
 

@@ -51,54 +51,75 @@
     </mat-toolbar>
   </div>
 
-  <div class="card-container">
-    <mat-card >
-      <mat-card-content>
-        <div style="display: flex; width: 100%;">
-          <div class="input-separator" style="width: 285px; margin-left: 15px;">
-            <label >Ubicación</label>
-            <br>
-            <input
-              type="text"
-              placeholder="¿A donde vas?"
-            >
-          </div>
-          <div style="width: 200px;"class="input-separator">
-            <label >Entrada</label>
-            <br>
-            <input
-              type="text"
-              placeholder="Agregar fechas"
-            >
-          </div>
-          <div class="input-separator">
-            <label >Salida</label>
-            <br>
-            <input
-              type="text"
-              placeholder="Agregar fechas"
-            >
-          </div>
-          <div >
-            <label >Huéspedes</label>
-            <br>
-            <input
-              type="text"
-              placeholder="Agregar huéspedes"
-            >
-          </div>
+  <div class="by-card">
+    <div class="card-container">
+      <mat-card class="card-content">
+            <div class="input-separator" style="width: 200px; margin-left: 15px;">
+              <label >Ubicación</label>
+              <br>
+              <input
+                type="text"
+                placeholder="¿A donde vas?"
+              >
+            </div>
+            <div class="input-separator">
+              <label >Entrada</label>
+              <br>
+              <input
+                type="text"
+                placeholder="Agregar fechas"
+              >
+            </div>
+            <div class="input-separator">
+              <label >Salida</label>
+              <br>
+              <input
+                type="text"
+                placeholder="Agregar fechas"
+              >
+            </div>
+            <div class="input-separator-h">
+              <label >Huéspedes</label>
+              <input
+                type="text"
+                placeholder="Agregar huéspedes"
+              >
+            </div>
+  
+            <button mat-fab color="primary"  class="search">
+              <mat-icon>search</mat-icon>
+            </button>
+      </mat-card>
+  
+  
+    </div>
+    <div
+      style="
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 5%;
+        margin-right: 50%;
+        position:relative;
+        "
+    >
 
-          <button mat-fab color="primary" style="background-color: #1E819C;" aria-label="Example icon button with a delete icon">
-            <mat-icon>search</mat-icon>
-          </button>
-        </div>
-      </mat-card-content>
-    </mat-card>
-
-
+      <h1 class="explorar-style-title">
+        {{celcius}}  °C
+      </h1>
+      
+      <button
+        mat-fab
+        style="
+          background-color: rgba(255, 255, 255, 0.5)
+        "
+        (click)="refresh()"
+      >
+        <mat-icon style="color: black;">refresh</mat-icon>
+      </button>
+    </div>
   </div>
-
-
+ 
   <div>
     <div class="explorar-continer">
       <h1 class="explorar-style-title">
@@ -108,8 +129,10 @@
         y su gente
       </h1>
       <br><br>
-      <p class="explorar-style">Échale un vistazo a uno d elos destinos más</p>
-      <p class="explorar-style">visitados del Caribe</p>
+      <p class="explorar-style">
+        Échale un vistazo a uno de los destinos más
+        visitados del Caribe
+      </p>
       <br><br>
       <button
         mat-raised-button
