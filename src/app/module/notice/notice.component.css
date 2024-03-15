@@ -1,11 +1,11 @@
 .container{
   background-color: #1E819C;
-  height: 950px;
-  display: block;
+  height: 800px;
+  display: absolute;
 }
 
 .header-container{
-  padding-top: 3%;
+  padding-top: 20px;
   margin-left: 4%;
 }
 
@@ -14,14 +14,15 @@
 }
 
 .primary-notice{
-  margin-top: 3%;
+  margin-top: 30px;
   margin-left: 4%;
-  width: 42%;
+  margin-right: 50px;
+  width: 600px;
 }
 .second-notice{
   display: block;
-  margin-top: 3%;
-  margin-left: 4%;
+  margin-top: 30px;
+  margin-left: 100px;
 }
 
 .p-primary {
@@ -63,14 +64,22 @@
 }
 
 .button-notice-second{
-  margin-left: 80%;
+  margin-left: 50px;
   color: white;
   text-decoration: none;
 }
 .button-notice-second-p {
-  margin-left: 60%;
+  margin-left: 150px;
   color: white;
   text-decoration: none;
+}
+
+.second-img{
+  width:300px
+}
+
+.title-second{
+  font-size:14px
 }
 
 h1{
@@ -80,7 +89,7 @@ h1{
 
 h2 {
   color: white;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 p{

@@ -1,15 +1,9 @@
-:host{
-  display: block;
-  width: 100%;
-}
-
 .slides {
   margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 80px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
+  gap: 5px;
   justify-items: center;
 }
 
@@ -25,7 +19,7 @@
 }
 
 img {
-  width: 400px;
+  width: 250px;
   height: auto;
 }
 
@@ -51,6 +45,7 @@ p {
 
 .card-button{
   color: #1E819C;
+  font-size:12px
 }
 
 .card-button-second{
@@ -59,19 +54,21 @@ p {
 
 .button-container {
   position: absolute;
-  top: 125%;
+  top: 175%;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  width: 98%;
-  margin-left: 50px;
+  width: 95%;
   margin-right: 50px;
 }
 
 .button-container-card {
   display: flex;
-  justify-content: flex-start;
-  white-space: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  width: 
+
 }
 
 .prev-button,
@@ -89,4 +86,8 @@ p {
 
 .mat-icon-black {
   color: black;
+}
+
+.second-img{
+  width: 200px
 }

@@ -6,6 +6,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import {MatExpansionModule} from '@angular/material/expansion';
+//Service
+import { WeatherService } from '../../services/weather.service';
 
 @Component({
   selector: 'app-welcome',
@@ -19,10 +22,20 @@ import { MatButtonModule } from '@angular/material/button';
     MatBadgeModule,
     MatCardModule,
     MatButtonModule,
+    MatExpansionModule
   ],
 })
+
 export class WelcomeComponent {
   isMenuOpen = true;
+  panelOpenState = false;
+  city = 'Tokyo';
+  currentWeather: any;
+
+  constructor(
+  ){}
+
+
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -30,10 +43,11 @@ export class WelcomeComponent {
 
   onMenuOpened() {
     this.isMenuOpen = false;
-    console.log('close');
+    console.log('Menú abierto');
   }
+
   onMenuClosed() {
     this.isMenuOpen = false;
-    console.log('close');
+    console.log('Menú cerrado');
   }
 }

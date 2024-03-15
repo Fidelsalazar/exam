@@ -1,0 +1,172 @@
+.container {
+
+}
+
+.header-container {
+  padding-top: 3%;
+  margin-left: 15%;
+}
+
+.container-coments {
+  margin-left: 7%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.data {
+  display: flex;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  gap: 200px
+}
+
+.data-form {
+  display: block;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.user-data,
+.coment-data {
+  flex: 1;
+  margin: 0;
+}
+
+.map-continer{
+  height: 60%;
+}
+
+.cards-style {
+  width: 100%;
+  height: 550px;
+  border-radius: none;
+  border-top: 4px solid #1E819C;
+  border-bottom: 4px solid #1E819C;
+}
+
+.data-continer{
+  margin-left: 20px;
+}
+
+.data-info{
+  display: flex;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 400px;
+  height: 50px;
+}
+
+.botton-info{
+  width: 60px;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: none;
+  align-items: center;
+  color: #F6F4F7;
+}
+
+.icon-style{
+  color: #1E819C;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-style-mail{
+  color: #1E819C;
+  font-size: 36px;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.coments-p {
+  color: #99D3D7;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 9%;
+  font-size: 27px;
+}
+
+.Google {
+  font-weight: bold;
+  font-size: 27px;
+  display: center;
+  margin-left: 40%;
+  transform: translateY(50%);
+  color: #908e91;
+}
+
+.form{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+p {
+  width: 550px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.5em;
+  color: #7a797a
+}
+
+hr{
+ background-color: #1E819C;
+ width: 99.9%;
+ height: 4px;
+ border: none;
+}
+
+
+
+input[type="text"],
+input[type="email"]
+{
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 99%;
+  height: 32px;
+}
+
+input[type="submit"] {
+  background-color: #99D3D7;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1E819C;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: 1px solid ;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+
+
+

@@ -7,6 +7,9 @@ import { InfoComponent } from "./module/info/info.component";
 import { ProductsComponent } from "./module/products/products.component";
 import { OfficeComponent } from "./module/office/office.component";
 import { ComentariosComponent } from "./module/comentarios/comentarios.component";
+import { AplicationComponent } from "./module/aplications/aplication.component";
+import { ContactsComponent } from "./module/contacts/contacts.component";
+import { FooterComponent } from "./module/footer/footer.component";
 
 @Component({
     selector: 'app-root',
@@ -21,7 +24,10 @@ import { ComentariosComponent } from "./module/comentarios/comentarios.component
         InfoComponent,
         ProductsComponent,
         OfficeComponent,
-        ComentariosComponent
+        ComentariosComponent,
+        AplicationComponent,
+        ContactsComponent,
+        FooterComponent
     ]
 })
 export class AppComponent {
@@ -45,7 +51,7 @@ export class AppComponent {
       url: '../../../assets/first-slide/melia-internacional.png',
       title: 'Alojamientos a tu medida',
       description:
-        'Encuentra el sitio mas acogewdor para pasar tus dias en la isla',
+        'Encuentra el sitio mas acogedor para pasar tus dias en la isla',
       redirect: '',
     },
     {
@@ -85,11 +91,29 @@ export class AppComponent {
     },
     {
       url: '../../../assets/products/58690ef8-ed75-4a63-b11d-35dc52dda6fdfa.png',
-      title: "Casa Particular Susana",
+      title: 'Casa Particular Susana',
       description: 'Plaza de la Revolución. La Habana.',
       price: '80,00 CUC',
       tare: 'por noche, por la casa',
       rating: '4.9 (225)',
+    },
+  ];
+  commentsSlides: any[] = [
+    {
+      url: '../../../assets/profile/1.jpeg',
+      name: 'Luke Wills',
+      date: 'Dic 16, 2020',
+      title: 'Lorem ipsum dolor sit amet, consectetur',
+      content:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam auctor, laoreet ligula sit amet, faucibus tortor. Sed nec nisi nec elit efficitur porta. Integer vitae risus eget velit tincidunt consectetur. Sed non diam auctor, laoreet ligula sit amet, faucibus tortor. Sed nec nisi nec elit efficitur porta. Integer vitae risus eget velit tincidunt consectetur. Sed non diam auctor, laoreet ligula sit amet, faucibus tortor. Sed nec nisi nec elit efficitur porta. Integer vitae risus eget velit tincidunt consectetur.',
+    },
+    {
+      url: '../../../assets/profile/2.jpeg',
+      name: 'Luke Wills',
+      date: 'Dic 16, 2020',
+      title: 'Lorem ipsum dolor sit amet, consectetur',
+      content:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam auctor, laoreet ligula sit amet, faucibus tortor. Sed nec nisi nec elit efficitur porta. Integer vitae risus eget velit tincidunt consectetur. Sed non diam auctor, laoreet ligula sit amet, faucibus tortor. Sed nec nisi nec elit efficitur porta. Integer vitae risus eget velit tincidunt consectetur. Sed non diam auctor, laoreet ligula sit amet, faucibus tortor. Sed nec nisi nec elit efficitur porta. Integer vitae risus eget velit tincidunt consectetur.',
     },
   ];
 }

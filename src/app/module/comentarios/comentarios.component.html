@@ -9,23 +9,100 @@
         class="menu-item-button" (click)="toggleMenu()"
         style="
           background-color: #99D3D7;
-          font-size: 15px;
+          font-size: 18px;
           width: 150px;
           border-radius: 20px;
-          border: none;
-          padding: 0;
-          align-items: center;
         "
       >
-        <span>
+        <span class="span-botton icon-align">
           Hoteles
           <mat-icon class="arrow-icon">{{ isMenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon>
         </span>
       </button>
 
       <mat-menu #menu_language="matMenu" class="menu-language" overlapTrigger="false" xPosition="before" yPosition="below">
-        <button mat-menu-item>Español</button>
-        <button mat-menu-item>Ingles</button>
+        <button mat-menu-item></button>
+        <button mat-menu-item></button>
       </mat-menu>
+  </div>
+
+  <div class="slides-container">
+    <div class="slides" >
+      <mat-card
+        class="cards-style"
+        *ngFor="let slide of slides; let i = index;"
+        [class.active]="i === currentSlide"
+      >
+        <div class="img-card">
+          <img [src]="slide.url" alt="">
+        </div>
+        <div class="data-card">
+          <p class="icon-align">
+            <mat-icon>perm_identity</mat-icon>
+              {{slide.name}}
+            <mat-icon class="second-icon-card">query_builder</mat-icon>
+              {{slide.date}}
+          </p>
+          <div class="line"></div>
+          <div style="display: block;">
+            <p style="font-size:16px; font-weight: bold;">{{ slide.title }}</p>
+            <p>{{slide.content}}</p>
+            <div class="button-container-card">
+              <button mat-flat-button >
+                <p class="card-button">
+                  VER MÁS
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+      <div class="button-container">
+        <button mat-fab class="prev-button" (click)="previous()">
+          <mat-icon class="mat-icon-black">chevron_left</mat-icon>
+        </button>
+
+        <button mat-fab class="next-button" (click)="next()">
+          <mat-icon class="mat-icon-black">chevron_right</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-coments ">
+    <p class="coments-p">Dejanos un comentario</p>
+
+      <form formulario="ngForm" (ngSubmit)="onSubmit()" class="data">
+        <div class="user-data">
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="input-data"
+          >
+            <br>
+          <input
+            type="text"
+            placeholder="Número de teléfono"
+            class="input-data"
+          >
+            <br>
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            class="input-data"
+          >
+        </div>
+        <div class="coment-data">
+          <textarea
+            placeholder="Escriba un mensaje"
+          >
+          </textarea>
+          <br>
+          <input
+            type="submit"
+            value="Enviar"
+          >
+        </div>
+      </form>
   </div>
 </div>

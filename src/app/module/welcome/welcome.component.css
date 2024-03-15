@@ -103,8 +103,8 @@
 .card-container {
   padding: 0;
   margin-top: 0;
-  margin-left: 30%;
-  margin-right: 20%;
+  margin-left: 250px;
+  margin-right:100px;
   border-radius: 50px;
   overflow: hidden;
 }

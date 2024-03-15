@@ -5,15 +5,15 @@
     *ngFor="let slide of slides; let i = index;"
     [class.active]="i === currentSlide"
   >
-      <img [src]="slide.url" alt="">
+      <img style="width:250px; heigth: 250px "[src]="slide.url" alt="">
       <p *ngIf="slide.rating">
         <mat-icon>star_border</mat-icon>
         {{slide.rating}}
       </p>
-      <h6>{{ slide.title }}</h6>
-      <p >{{ slide.description }}</p>
+      <p style="font-size:14px">{{ slide.title }}</p>
+      <p style="color: rgba(105, 101, 101, 0.5)">{{ slide.description }}</p>
        <p class="price" *ngIf="slide.price">
-        {{slide.price}} {{slide.tare}}
+         {{slide.price}}  <span style="color: rgba(105, 101, 101, 0.5)">{{slide.tare}}</span>
       </p>
       <div class="button-container-card">
         <button mat-flat-button >
